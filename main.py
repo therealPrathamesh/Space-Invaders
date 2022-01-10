@@ -125,6 +125,8 @@ while running:
         if event.type == pygame.KEYUP:
             if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
                 playerX_change = 0 
+            if event.key == pygame.K_m:
+                mixer.music.set_volume(0)
 
 
     #Checking boundaries for spaceship
